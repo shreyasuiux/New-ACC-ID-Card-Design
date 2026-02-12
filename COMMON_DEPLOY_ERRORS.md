@@ -107,7 +107,7 @@ Updated files:
 
 ---
 
-### 6. **Assets Not Loading (figma:asset errors)**
+### 6. **Assets Not Loading (figma:asset errors)** ✅ FIXED
 
 **Error Message:**
 ```
@@ -115,14 +115,17 @@ Failed to resolve module 'figma:asset/...'
 ```
 
 **Root Cause:**
-`figma:asset` is a virtual module scheme used by Figma Make - should work automatically
+`figma:asset` is a Figma Make virtual module scheme that doesn't resolve in standard Vite builds
 
-**Solution:**
-- Ensure you're using Vite (✅ Already configured)
-- Check `vite.config.ts` is correct (✅ Already correct)
-- This should work automatically in production
-
-If still failing, the issue is with Figma Make's build system (not your code)
+**Solution:** ✅ APPLIED
+- Replaced all Figma imports with traditional relative imports
+- Assets now import from `src/assets/` directory
+- Files updated:
+  - `LoginPage.tsx`
+  - `Header.tsx`
+  - `Container.tsx` files
+  - `TemplateCardRenderer.tsx`
+  - `templateBridge.ts`
 
 ---
 

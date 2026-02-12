@@ -104,9 +104,9 @@ Open DevTools → Network tab:
 
 ## 🐛 COMMON DEPLOYMENT ERRORS
 
-### **Error 1: "Cannot find module 'figma:asset'"**
-**Cause:** This is a Figma Make virtual module - should work automatically  
-**Fix:** Ensure using latest Vite config (already in place)
+### **Error 1: "Cannot find module 'figma:asset'"** ✅ FIXED
+**Cause:** Figma Make virtual module scheme doesn't resolve in standard Vite builds  
+**Fix:** ✅ All figma imports replaced with traditional relative imports to `src/assets/`
 
 ### **Error 2: "404 Not Found" on refresh**
 **Cause:** Missing SPA routing config  

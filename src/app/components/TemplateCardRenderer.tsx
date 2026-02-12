@@ -19,7 +19,7 @@ import {
   formatEmployeeId,
   formatBloodGroup,
 } from '../utils/cardFormatters';
-import logo from 'figma:asset/6dce495d999ed88e54f35e49635962b824088162.png';
+import logo from '../../assets/6dce495d999ed88e54f35e49635962b824088162.png';
 
 // ─────────────────────────────────────────────────
 // Card dimensions — immutable constants

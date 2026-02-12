@@ -37,7 +37,7 @@ import { resolveTemplateDesign } from '../../utils/templateData';
 import { DEFAULT_BACK_TEXT } from '../../utils/defaultBackText';
 import { DEFAULT_FRONT_TEXT } from '../../utils/defaultFrontText';
 import type { EmployeeRecord } from '../../utils/employeeStorage';
-import logo from 'figma:asset/6dce495d999ed88e54f35e49635962b824088162.png';
+import logo from '../../../assets/6dce495d999ed88e54f35e49635962b824088162.png';
 
 // ── Constants ──
 const CARD_W = 153;
